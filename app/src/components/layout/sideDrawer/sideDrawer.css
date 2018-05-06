@@ -1,0 +1,19 @@
+.sideDrawer {
+  background-color: white;
+  position: fixed;
+  top: 10vh;
+  left: 0;
+  width: 20vw;
+  height: 90vh;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  transform: translateX(0);
+  transition: all .3s ease-in-out;
+}
+
+.hidden {
+  transform: translateX(-30vw);
+}
