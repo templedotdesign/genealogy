@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Old+Standard+TT:400,700');
+
+:root {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Old Standard TT', serif;
+}
