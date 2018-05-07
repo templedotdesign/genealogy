@@ -1,8 +1,14 @@
+//Core
 import React, { Component } from 'react';
 
+//Components
 import Wrapper from '../wrapper/wrapper';
 import Toolbar from './toolbar/toolbar';
 import SideDrawer from './sideDrawer/sideDrawer';
+import Footer from './footer/footer';
+
+//CSS
+import classes from './layout.css';
 
 class Layout extends Component {
   state = {
@@ -17,8 +23,11 @@ class Layout extends Component {
     return (
       <Wrapper>
         <Toolbar clicked={this.toggleSideDrawer}/>
-        <SideDrawer hidden={this.state.hideSideDrawer}/>
-        {this.props.children}
+        <SideDrawer hidden={this.state.hideSideDrawer} clicked={this.toggleSideDrawer}/>
+        <div className={classes.routeWrapper}>
+          {this.props.children}
+        </div>
+        <Footer/>  
       </Wrapper>
     )
   }

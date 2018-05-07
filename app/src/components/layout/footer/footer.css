@@ -1,0 +1,37 @@
+.footer {
+  background-color: var(--dark);
+  color: var(--light);
+  padding: 20px;
+  display: grid;
+  grid-row-gap: 40px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr, auto;
+  grid-template-areas: 
+    'left      right'
+    'copyright copyright';
+}
+
+.left {
+  grid-area: left;
+}
+
+.right {
+  grid-area: right;
+}
+
+.left, .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.left p, .right p {
+  margin: 0 10px;
+  font-size: 1.3em;
+}
+
+.copyright {
+  grid-area: copyright;
+  text-align: center;
+}

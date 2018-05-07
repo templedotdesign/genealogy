@@ -17,3 +17,17 @@
 .hidden {
   transform: translateX(-30vw);
 }
+
+.sideDrawer a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.6em;
+}
+
+.sideDrawer a:hover {
+  color: green;
+}
+
+a.active {
+  color: green;
+}
