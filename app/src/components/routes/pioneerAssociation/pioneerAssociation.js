@@ -2,6 +2,10 @@
 import React, { Component } from 'react';
 
 class PioneerAssociation extends Component {
+  componentDidMount() {
+    window.scroll(0, 0);
+  }
+  
   render() {
     return (
       <div>

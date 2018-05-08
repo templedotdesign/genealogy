@@ -1,0 +1,13 @@
+.publication {
+  padding: 10px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  margin: 10px 0;
+}
+
+.publication p {
+  margin: 5px 0;
+  font-size: 1.2em;
+}

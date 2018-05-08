@@ -4,6 +4,7 @@
   box-sizing: border-box;
   --dark: rgb(51,51,51);
   --light: white;
+  --red: #bc1414;
 }
 
 *, *::after, *::before {

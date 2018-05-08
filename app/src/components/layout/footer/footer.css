@@ -4,31 +4,42 @@
   padding: 20px;
   display: grid;
   grid-row-gap: 40px;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr, auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr, auto, auto;
   grid-template-areas: 
-    'left      right'
-    'copyright copyright';
+    'left      center    right'
+    'outoftown outoftown outoftown'
+    'copyright copyright copyright';
 }
 
 .left {
   grid-area: left;
 }
 
+.center {
+  grid-area: center;
+}
+
 .right {
   grid-area: right;
 }
 
-.left, .right {
+.outoftown {
+  grid-area: outoftown;
+}
+
+.left, .center, .outoftown, .right {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  min-height: 30vh;
 }
 
-.left p, .right p {
+.left p, .center p, .outoftown p, .right p {
   margin: 0 10px;
   font-size: 1.3em;
+  text-align: center;
 }
 
 .copyright {

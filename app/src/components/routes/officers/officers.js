@@ -1,7 +1,7 @@
 //Core
 import React, { Component } from 'react';
 
-class Reunions extends Component {
+class Officers extends Component {
   componentDidMount() {
     window.scroll(0, 0);
   }
@@ -9,10 +9,10 @@ class Reunions extends Component {
   render() {
     return (
       <div>
-        <h1>Reunions Route</h1>
+        <h1>Officers Route</h1>
       </div>
     )
   }
 }
 
-export default Reunions;
+export default Officers;

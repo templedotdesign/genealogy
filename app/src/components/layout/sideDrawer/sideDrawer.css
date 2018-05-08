@@ -12,6 +12,7 @@
   align-items: center;
   transform: translateX(0);
   transition: all .3s ease-in-out;
+  z-index: 3;
 }
 
 .hidden {
@@ -25,9 +26,9 @@
 }
 
 .sideDrawer a:hover {
-  color: green;
+  color: var(--red);
 }
 
 a.active {
-  color: green;
+  color: var(--red);
 }

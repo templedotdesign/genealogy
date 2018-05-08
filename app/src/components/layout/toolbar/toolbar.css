@@ -16,3 +16,7 @@
   font-size: 1.7em;
   cursor: pointer;
 }
+
+.toolbar h1 {
+  color: var(--red);
+}
