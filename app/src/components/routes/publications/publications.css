@@ -4,6 +4,7 @@
   font-size: 3em;
 }
 
-.publications h3 {
+.publications h2 {
   margin: 25px 0;
+  color: var(--red);
 }

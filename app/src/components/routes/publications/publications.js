@@ -35,7 +35,7 @@ class Publications extends Component {
     return (
       <div className={classes.publications}>
         <h1>Publications</h1>
-        <h3>Censuses</h3>
+        <h2>Censuses</h2>
         {this.state.publications.filter(x => {
           return x.type === 'census'
         }).map(publication => {
@@ -43,7 +43,7 @@ class Publications extends Component {
             <Publication key={publication.name} data={publication}/>
           )
         })}
-        <h3>Birth & Death Records</h3>
+        <h2>Birth & Death Records</h2>
         {this.state.publications.filter(x => {
           return x.type === 'birth_death_records'
         }).map(publication => {
@@ -51,7 +51,7 @@ class Publications extends Component {
             <Publication key={publication.name} data={publication}/>
           )
         })}
-        <h3>Marriage Records</h3>
+        <h2>Marriage Records</h2>
         {this.state.publications.filter(x => {
           return x.type === 'marriage_records'
         }).map(publication => {
@@ -59,7 +59,7 @@ class Publications extends Component {
             <Publication key={publication.name} data={publication}/>
           )
         })}
-        <h3>Newspaper Abstracts</h3>
+        <h2>Newspaper Abstracts</h2>
         {this.state.publications.filter(x => {
           return x.type === 'newspaper_abstracts'
         }).map(publication => {
@@ -67,7 +67,7 @@ class Publications extends Component {
             <Publication key={publication.name} data={publication}/>
           )
         })}
-        <h3>This & That</h3>
+        <h2>This & That</h2>
         {this.state.publications.filter(x => {
           return x.type === 'this_and_that'
         }).map(publication => {
@@ -75,7 +75,7 @@ class Publications extends Component {
             <Publication key={publication.name} data={publication}/>
           )
         })}
-        <h3>Hardin County History</h3>
+        <h2>Hardin County History</h2>
         {this.state.publications.filter(x => {
           return x.type === 'hardin_county_history'
         }).map(publication => {
@@ -83,7 +83,7 @@ class Publications extends Component {
             <Publication key={publication.name} data={publication}/>
           )
         })}
-        <h3>Obituary Collections</h3>
+        <h2>Obituary Collections</h2>
         {this.state.publications.filter(x => {
           return x.type === 'obituary_collections'
         }).map(publication => {
@@ -91,7 +91,7 @@ class Publications extends Component {
             <Publication key={publication.name} data={publication}/>
           )
         })}
-        <h3>Cemetery Indexes</h3>
+        <h2>Cemetery Indexes</h2>
         {this.state.publications.filter(x => {
           return x.type === 'cemetery_indexes'
         }).map(publication => {
@@ -99,7 +99,7 @@ class Publications extends Component {
             <Publication key={publication.name} data={publication}/>
           )
         })}
-        <h3>Atlases</h3>
+        <h2>Atlases</h2>
         {this.state.publications.filter(x => {
           return x.type === 'atlases'
         }).map(publication => {
@@ -107,7 +107,7 @@ class Publications extends Component {
             <Publication key={publication.name} data={publication}/>
           )
         })}
-        <h3>Miscellaneous</h3>
+        <h2>Miscellaneous</h2>
         {this.state.publications.filter(x => {
           return x.type === 'misc'
         }).map(publication => {

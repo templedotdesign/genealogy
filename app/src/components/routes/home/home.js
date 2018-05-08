@@ -85,7 +85,6 @@ class Home extends Component {
         <div className={classes.link}>
           <NavLink to='/volunteers'>Meet Some Of Our Volunteers</NavLink>
         </div>
-       
       </div>
     )
   }

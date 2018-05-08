@@ -12,6 +12,7 @@ import Center from '../routes/center/center';
 import Home from '../routes/home/home';
 import Links from '../routes/links/links';
 import MemberPages from '../routes/memberPages/memberPages';
+import Membership from '../routes/membership/membership';
 import Military from '../routes/military/military';
 import Officers from '../routes/officers/officers';
 import PioneerAssociation from '../routes/pioneerAssociation/pioneerAssociation';
@@ -20,18 +21,21 @@ import Publications from '../routes/publications/publications';
 import Queries from '../routes/queries/queries';
 import ResearchAids from '../routes/researchAids/researchAids';
 import Reunions from '../routes/reunions/reunions';
+import Schedule from '../routes/schedule/schedule';
+import Tour from '../routes/tour/tour';
 import Volunteers from '../routes/volunteers/volunteers';
 
 const app = () => {
   return (
     <BrowserRouter>
       <Layout>
-        <Route exact path='/' component={Home}/>  
         <Route exact path='/admin' component={Admin}/>
         <Route exact path='/adopt-a-book' component={AdoptABook}/>
         <Route exact path='/center' component={Center}/>
+        <Route exact path='/' component={Home}/>          
         <Route exact path='/links' component={Links}/>
         <Route exact path='/member-pages' component={MemberPages}/>
+        <Route exact path='/membership' component={Membership}/>
         <Route exact path='/military' component={Military}/>
         <Route exact path='/officers' component={Officers}/>
         <Route exact path='/pioneer-association' component={PioneerAssociation}/>
@@ -39,7 +43,9 @@ const app = () => {
         <Route exact path='/publications' component={Publications}/>
         <Route exact path='/queries' component={Queries}/>
         <Route exact path='/research-aids' component={ResearchAids}/>
-        <Route exact path='/reunions' component={Reunions}/> 
+        <Route exact path='/reunions' component={Reunions}/>
+        <Route exact path='/schedule' component={Schedule}/> 
+        <Route exact path='/tour' component={Tour}/>
         <Route exact path='/volunteers' component={Volunteers}/>                  
       </Layout>
     </BrowserRouter>
